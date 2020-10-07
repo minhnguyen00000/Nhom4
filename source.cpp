@@ -7,13 +7,23 @@ void hello()
 	
 	cout<<"Hello";
 }
-int tru(int a, int b)
+int kiemTraSoChinhPhuong(int n)
 {
-	cout<<a-b;
-int cong(int a, int b)
-{
-
+	int i = 0;
+	while (i*i<n) ++i;
+	return (i*i == n);
 }
-int nhan(int a, int b)
+int soNguyenTo(int soA)
 {
+	if (soA < 2)
+		return 0;
+
+	for (int i = 2; i <= sqrt((float)soA); i++)
+	{
+		if (soA%i == 0)
+		{
+			return 0;
+		}
+	}
+	return 1;
 }
