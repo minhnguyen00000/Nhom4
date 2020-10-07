@@ -1,29 +1,34 @@
 int USCLN(int a, int b)
 {
-
+   while(a * b != 0)
+   {
+	   if(a>b) {
+	   a %= b;}
+	   else {
+		   b %= a ;
+	   }
+   }
+   return a + b;
 }
 void hello()
 {
 	
 	cout<<"Hello";
 }
-int kiemTraSoChinhPhuong(int n)
+int tru(int a, int b)
 {
-	int i = 0;
-	while (i*i<n) ++i;
-	return (i*i == n);
+	cout << "Nhap a,b :" ;
+	cin >> a,b ;
+	cout<< a-b;
+int cong(int a, int b)
+{
+   cout << "Nhap a,b :" ;
+	cin >> a,b ;
+	cout<< a+b;
 }
-int soNguyenTo(int soA)
+int nhan(int a, int b)
 {
-	if (soA < 2)
-		return 0;
-
-	for (int i = 2; i <= sqrt((float)soA); i++)
-	{
-		if (soA%i == 0)
-		{
-			return 0;
-		}
-	}
-	return 1;
+	cout << "Nhap a,b :" ;
+	cin >> a,b ;
+	cout<< a*b;
 }
