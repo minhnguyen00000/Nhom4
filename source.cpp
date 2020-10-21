@@ -1,32 +1,29 @@
-int USCLN(int a, int b)
-{
+#include <iostream>
+#include <random>
+#include <cstdlib> 
+#include <ctime> 
+using namespace std;
 
-}
-void hello()
+int main()
 {
-	
-	cout<<"Hello";
-}
-int tru(int a, int b)
-{
+	srand(time(NULL));
 	int kq;
-	kq=a-b;
-	return kq;
-int cong(int a, int b)
-{
-int kq;
-	kq=a+b;
-	return kq;
-}
-int nhan(int a, int b)
-{
-int kq;
-	kq=a*b;
-	return kq;
-}
-int chia(int a, int b)
-{
-int kq;
-	kq=a/b;
-	return kq;
+	int a = rand() % (100 - 1 + 1) + 1;
+	cout << a;
+	cout << endl;
+	int b = rand() % (100 - 1 + 1) + 1;
+	cout << b;
+	cout << endl;
+	int ketqua = a + b;
+	cout << "\nMoi ban nhap ket qua cua tong 2 so : ";
+	cin >> kq;
+	if (ketqua == kq)
+	{
+		cout << "Nhap dung";
+	}
+	else
+	{
+		cout << "Ket qua sai ";
+	}
+	return 0;
 }
