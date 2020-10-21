@@ -23,7 +23,7 @@ int main()
 	}
 	else
 	{
-		cout << "Ket qua sai ";
+		cout << "Ket qua sai a ";
 	}
 	return 0;
 }
